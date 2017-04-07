@@ -1,7 +1,7 @@
 # openshift-cakephp-mysql
 OpenShift, CakePHP and MySQL
 
-# OpenShift Command Line Tools
+# OpenShift Command Line Interface (CLI) Tools
 
 See also https://console.preview.openshift.com/console/command-line
 
@@ -12,6 +12,8 @@ oc --help
 ```
 
 To ***LOGIN*** with the command line tool, run the command:
+
+NOTE: When logged in on the openshift website, opening the above URL will show you your token.
 
 ```javascript
 oc login https://api.preview.openshift.com --token=<TOKEN PROVIDED, KEEP IT SECRET>
@@ -26,6 +28,22 @@ You have one project on this server: "totaljs-001"
 
 Using project "totaljs-001".
 Welcome! See 'oc help' to get started.
+```
+
+The oc login command automatically creates and manages CLI configuration files. All information gathered by the command is stored in a configuration file located in ```~/.kube/config```.
+
+The current CLI configuration can be viewed using the following command:
+
+```javascript
+oc config view
+```
+
+It will also show all users tokens.
+
+You can ***LOG OUT*** of CLI using the oc logout command:
+
+```javascript
+oc logout
 ```
 
 To ***DELETE*** the deployment config (dc) 'cakephp-mysql-persistent'  and all of its deployments of the project 'totaljs-001' run the command:
