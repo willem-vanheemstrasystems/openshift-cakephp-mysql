@@ -3,6 +3,8 @@ OpenShift, CakePHP and MySQL
 
 # OpenShift Command Line Interface (CLI) Tools
 
+Based on 'OpenShift Online (Next Gen) Developer Preview Documentation' at https://docs.openshift.com/online/welcome/index.html
+
 See also https://console.preview.openshift.com/console/command-line
 
 To install 'oc' on Mac, download the application from the location described in above URL, then place it in /opt/local/bin. You should now be able to run the following command:
